@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="themes/blue.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <title>Jquery practice</title>
@@ -10,8 +12,10 @@
   <body>
  <!--this is the first page-->
  <section id="firstpage" data-role="page">
-   <div data-role="header" data-position="fixed" data-fullscreen="true">
+   <div data-role="header" data-position="fixed" data-fullscreen="true" data-themes="a">
      <h1>This is the header</h1>
+     <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar" data-position="fixed" >calendar</button>
+
 
    </div>
    <div class="ui-content">
@@ -20,27 +24,44 @@
 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
 
 Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.</p>
+
       <p><a href="#secondpage" data-transition="slide" class="ui-btn">Go to second page</a></p>
    </div>
-   <div data-role="footer">
+   <div data-role="footer" data-theme="a">
       <h2>Page content footer</h2>
    </div>
  </section>
 
   <!--this is the second page-->
   <div id="secondpage" data-role="page">
-    <div data-role="header" data-position="fixed">
+    <div data-role="header" data-position="fixed" data-themes="a">
     <h1>page content header</h1>
-  </div>
+    </div>
   <div class="ui-content">
      <p>page 2 has different content</p>
      <p><a href="#firstpage" data-transition="slide" class="ui-btn">Go to the first page</a></p>
   </div>
-
-  <div data-role="footer">
-     <a href="#firstpage" class="ui-btn">btn</a>
+    <!--slider-->
+  <form>
+    <label for="slider-2">Slide as much as you can</label>
+    <input type="range" name="slider-2" id="slider-2" data-highlight="true" min="0" max="100" value="50">
+</form>
+<form>
+<div class="ui-field-contain">
+    <label for="select-native-1">Basic:</label>
+    <select name="select-native-1" id="select-native-1">
+        <option value="1">The 1st Option</option>
+        <option value="2">The 2nd Option</option>
+        <option value="3">The 3rd Option</option>
+        <option value="4">The 4th Option</option>
+    </select>
+</div>
+</form>
+  <div data-role="footer" data-themes="a">
+     <a href="#firstpage" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
 
   </div>
   </div>
+
   </body>
 </html>
