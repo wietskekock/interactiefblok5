@@ -13,44 +13,65 @@
  <!--this is the first page-->
  <section id="firstpage" data-role="page">
    <div data-role="header" data-position="fixed" data-fullscreen="true" data-themes="a">
-     <h1>This is the header</h1>
+     <h1>Route</h1>
      <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar" data-position="fixed" >calendar</button>
 
 
    </div>
+
    <div class="ui-content">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2399.0491156299213!2d5.6425698514583305!3d53.03745460540521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8ee2a6ab04a51%3A0x7ee9d917879df030!2sROC+Friese+Poort+Sneek!5e0!3m2!1snl!2snl!4v1511099904543" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
 
 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
 
 Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.</p>
+<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search ..." data-inset="true">
+    <li><a href="#">Friesepoort</a></li>
+    <li><a href="#">school</a></li>
+    <li><a href="#">route</a></li>
+    <li><a href="#">form</a></li>
+    <li><a href="#">opleiding</a></li>
+    <li><a href="#">mbo</a></li>
+</ul>
 
       <p><a href="#secondpage" data-transition="slide" class="ui-btn">Go to second page</a></p>
    </div>
    <div data-role="footer" data-theme="a">
-      <h2>Page content footer</h2>
+      <h2>Route</h2>
    </div>
  </section>
 
   <!--this is the second page-->
   <div id="secondpage" data-role="page">
     <div data-role="header" data-position="fixed" data-themes="a">
-    <h1>page content header</h1>
+    <h1>form</h1>
     </div>
   <div class="ui-content">
-     <p>page 2 has different content</p>
-     <p><a href="#firstpage" data-transition="slide" class="ui-btn">Go to the first page</a></p>
-  </div>
-    <!--slider-->
-  <form>
-    <label for="slider-2">Slide as much as you can</label>
-    <input type="range" name="slider-2" id="slider-2" data-highlight="true" min="0" max="100" value="50">
-</form>
 
-<label for="textinput-hide" class="ui-hidden-accessible">Name:</label>
-<input type="text" name="textinput-hide" id="textinput-hide" placeholder="Text input" value="">
-<label for="date">Date:</label>
-<input type="date" name="date" id="date" value="">
+
+     <form method="get" action="">
+         <fieldset class="ui-field-contain">
+               <label for="name">Your Name:</label>
+               <input type="text" name="name" id="name" value=" " placeholder="Your name">
+               <label for="address">Your Address:</label>
+               <input type="text" name="address" id="adress" value=" " placeholder="Your address">
+               <label for="age">Your Age:</label>
+               <input type="number" name="age" id="age" value=" " placeholder="Your age">
+               <label for="email">Your Email:</label>
+               <input type="text" name="email" id="email" value=" " placeholder="Your email">
+               <label for="birthdate">Your Birthdate:</label>
+               <input type="date" name="birthdate" id="birthdate" value=" " placeholder="Your birthdaete">
+        </fieldset>
+    </form>
+    <form>
+               <input type="submit" value="Submit" data-themes="a">
+    </form>
+  <p><a href="#firstpage" data-transition="slide" class="ui-btn">Go to the first page</a></p>
+  </div>
+
+
+
   <div data-role="footer" data-themes="a">
      <a href="#firstpage" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
 
